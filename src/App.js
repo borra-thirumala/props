@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './Welcome';
+import { Bio } from './Bio';
 
 function App() {
+  let name="Thirumala"
+  let mob=1234567890
+  let city="Welcome to hyd"
+  let age=22
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Welcome key_name={name} city={city} />
+      <Bio key_mob={mob} age={age}/>
     </div>
+    
   );
 }
 
